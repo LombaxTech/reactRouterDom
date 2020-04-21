@@ -5,7 +5,7 @@ import About from './Components/About';
 import Shop from './Components/Shop';
 import Toy from './Components/Toy';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import ExampleProblem from './Components/ExampleProblem';
 function App() {
     return (
         <Router>
@@ -17,6 +17,7 @@ function App() {
                     <Route path="/shop" exact component={Shop} />
                     <Route path="/shop/product" component={Product} />
                     <Route path="/shop/:id" component={Toy} />
+                    <Route path="/exampleproblem" exact component={ExampleProblem} />
                 </Switch>
             </div>
         </Router>
